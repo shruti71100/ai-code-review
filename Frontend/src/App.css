@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(8, 2, 35);
+  font-family: "Fira code", "Fira Mono", monospace;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  height: calc(100% - 4rem);
+}
+.review:hover {
+  background-color: rgb(56, 26, 180); 
+  transform: scale(1.02);             
+}
+
+.review:active {
+  background-color: rgb(27, 6, 110);  
+  transform: scale(0.98);             
+}
+
+.left,
+.right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+.left {
+  background-color: rgb(6, 5, 5);
+  border: 1px solid white;
+  box-shadow: inset 0 0 0.5rem rgba(239, 237, 237, 0.5);
+  position: relative;
+}
+
+.code {
+  height: 100%;
+  background-color: rgb(12, 12, 12);
+}
+
+.code pre {
+  background-color: rgb(8, 8, 8) !important;
+  padding: 1rem;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.7rem;
+  overflow-x: auto;
+}
+
+.code pre code {
+  background-color: transparent !important;
+  color: white;
+}
+
+.review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(38, 9, 154);
+  color: white;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+}
+
+.right {
+  background-color: rgb(49, 48, 48);
+  padding: 2rem;
+  color: white;
+  font-size: 18px;
+  overflow-y: auto;
+  border-radius: 0.7rem;
+}
