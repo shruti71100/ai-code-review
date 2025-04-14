@@ -5,9 +5,9 @@ const cors=require('cors')
 app.use(cors());/*server create kiya and appp me store krdiya
 */
 app.use(express.json());
-app.get('/',(req,res)=>{
+/*app.get('/',(req,res)=>{
     res.send("Hello world")
-})
-app.use('/ai',aiRoutes)
+})*/
+app.use('/',aiRoutes)
 
 module.exports=app;
