@@ -13,7 +13,7 @@ function App() {
 
   const reviewCode = async (code) => {
     try {
-      const response = await axios.post("https://ai-code-review-backend-kv4w.onrender.com", { code });
+      const response = await axios.post("http://localhost:3000/ai/get-review", { code });
       setReview(response.data);
     } catch (error) {
       console.error("Error reviewing code:", error);
