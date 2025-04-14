@@ -2,7 +2,7 @@ const express=require('express');
 const aiController=require("../Controllers/ai.controllers")
 const router=express.Router();
 
-router.post("https://ai-code-review-backend-kv4w.onrender.com",aiController.getReview);
+router.post("/get-review",aiController.getReview);
 module.exports=router;
 
 /*ai.routes.js – The Door (Routes Layer)
